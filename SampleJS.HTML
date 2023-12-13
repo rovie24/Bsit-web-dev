@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 id ="header"> Hello BSIS </h1>
+<input type="text" id ="inpt"/>
+
+<!-- <button onclick="red()"> RED </button>
+<button onclick="green()"> GREEN </button> -->
+
+<p id="output"></p>
+<button onclick="pressed()"> Click </button>
+
+<script type="text/javascript">
+
+    // DISPLAYING OUTPUT
+
+        // document.write("<h1> Hello </h1>");
+        // console.log("Hello BSIS 3A");
+        // console.warn("This is a warning");
+        // console.error("This is an error.");
+
+        // document.getElementById("header").innerHTML = "This is get element";
+        // document.write(document.getElementById("header").innerHTML);
+        // document.getElementById("inpt").value = "Hello"; 
+    
+    // DATA TYPES Primitive and Object
+
+    // VARIABLES
+
+            // var x = 69; // fullName, _fullName valid variables
+            // x = 71;
+            // console.log(x);
+
+            // var name = "Madz";
+            // console.log(name);
+
+            // var n_name = 5;
+            // n_name = name;
+            // console.log(n_name);
+    
+    // OPERATORS
+
+            // var x = 60;
+            // var y = 9;
+            // var z = x + y;
+            // console.log(z);
+            // document.write(z);
+
+            // x += 5; // x = x + 5;
+            // console.log(x);
+            // document.write(x);
+
+            // y++;
+            // console.log(y);
+            // document.write(y);
+
+            // var str = "BSIS";
+            // var str1 = "Hello";
+            // var w = str + " " + y;
+            // console.log(w);
+            // console.log(str1 + " " + str);
+    
+    // ORDER OF OPERATION (BEDMAS)
+        // B - bracket
+        // E - exponents
+        // D - division
+        // M - multiplication
+        // A - addition
+        // S - subtraction
+
+            // var result = (4 * 9) / 8 + 10 - 2;
+            // console.log(result);
+    
+    // BOOLEANS and CONDITIONS
+
+            // var x = 6;
+            // var y = 9;
+            // var b = x > y;
+            // console.log(b);
+
+            // var q = 6;
+            // var w = "6";
+            // var e = q == w; // double equal sign ignores the type
+            // console.log(e); // true
+
+            // var r = q === w; // false
+            // console.log(r);
+
+            // var name ="Madz"
+            // var nickName = "Madz"
+
+            // var m = 9;
+            // var n = 6;
+            // console.log(m > n && m == n);
+            // console.log(name == nickName && m > n && m != n);
+    
+    // Function
+
+            // function add(a, b){
+            //     return a + b;
+            // }
+
+            // var x = add(5, 5);
+            // var y = add(10, 10);
+            // console.log(x);
+            // console.log(y);
+            // console.log(add(200, 50));
+
+            // function red(){
+            //     console.log("red");
+            //     document.getElementById("header").innerHTML = "Red";
+            //     document.getElementById("header").style.color = "white";
+            //     document.body.style.backgroundColor = "red";
+            // }
+
+            // function green(){
+            //     console.log("green");
+            //     document.getElementById("header").innerHTML = "Green";
+            //     document.getElementById("header").style.color = "white";
+            //     document.body.style.backgroundColor = "green";
+            // }
+
+        // IF, ELSE IF, ELSE
+
+            // function pressed(){
+            //     var text = document.getElementById("inpt").value;
+            //     if(text === "red"){
+            //         document.getElementById("header").style.color = "red"
+            //     }
+            //     else if(text === "green"){
+            //         document.getElementById("header").style.color = "green"
+            //     }
+            //     else if(text === "blue"){
+            //         document.getElementById("header").style.color = "blue"
+            //     }
+            //     else {
+            //         document.getElementById("header").style.color = "black"
+            //     }
+            // }
+
+         // SWITCH
+
+            // function pressed(){
+            //      var text = document.getElementById("inpt").value;
+            //      switch(text){
+            //         case "red": 
+            //            document.getElementById("header").style.color = "red"
+            //            break;
+
+            //         case "green": 
+            //            document.getElementById("header").style.color = "green"
+            //              break;
+
+            //         case "blue": 
+            //             document.getElementById("header").style.color = "blue"
+            //             break;
+
+            //         default:
+            //            document.getElementById("header").style.color = "black"
+            //             break;
+            //      }
+            // }
+        
+            // function pressed(){
+            //     var text = parseInt(document.getElementById("inpt").value);
+            //     var output = document.getElementById("output");
+
+            //     if(text >= 18){
+            //         output.innerHTML = " You are Qualified to vote."
+            //     }
+            //     else if(text < 18){
+            //         output.innerHTML = " You are not Qualified to vote."
+            //     }
+            //     else {
+            //         output.innerHTML = "Please input a valid number!"
+            //     }
+            // }
+    
+    // STRING METHODS AND MANIPULATION
+
+            // function pressed(){
+            //     var text = document.getElementById("inpt").value;
+            //     output.innerHTML = text.toUpperCase(); // change this toLowerCase method
+            //     output.innerHTML = text.endsWith("@");
+            //     output.innerHTML = text.trim();
+            //     console.log(text.length);
+            //     output.innerHTML = "You typed: " + text.trim();
+            // }
+    
+    // ARRAYS
+
+        // var arry = ["Madz", 9, 6, "hello"];
+        // console.log(arry);
+        // console.log(arry.length);
+        // arry[2] = "Bal";
+        // console.log(arry[0]);
+
+        //Remove an element
+
+        // console.log(arry.pop());
+        // console.log(arry);
+        // arry.push("BSIT");
+        // console.log(arry);
+
+        // arry.shift();
+        // console.log(arry);
+
+        // arry.sort();
+        // console.log(arry);
+    
+        // var i = 0;
+        // while (i < 10) {
+        //     console.log(i)
+        //     i++
+        //     if( i == 5){
+        //         break
+        //     }
+        // }
+        // console.log("Break");
+
+    // LOOP Thru ARRAY
+        // var arr  = ["Bal", "Mel", "Gas"];
+        // var i = 0;
+        // while(i < arr.length){
+        //     console.log(arr[i]);
+        //     i++
+        // }
+
+        // var arry = [];
+        // var x = 0;
+        // while(x <= 100){
+        //     arry.push(x);
+        //     x++;
+        // }
+        // console.log(arry);
+
+        // function findInArray(arr, value){
+        //     for(var i = 1; i < 10; i++){
+        //         if(arr[i] == value){
+        //             return true;
+        //         }
+        //     }
+        //     return false;
+        // }
+
+        // var arr = [1,2,3,4,5,"Madz", true];
+        // console.log(findInArray(arr, "Madz"));
+
+        // function squared(n){
+        //     for(var i = 0; i < n; i++){
+        //         for(var j = 0 ; j < n; j++){
+        //             console.log("This runs");
+        //         }
+        //     }
+        // }
+
+        // squared(5)
+
+        // STRINGS ARE ITERABLE
+        // var x = "Hello BSIT"
+        // for(var i = 0; i < x.length; i++){
+        //     console.log(x[i]);
+        // }
+
+        // var arr  = ["Bal", "Mel", "Gas"];
+
+        // console.log(arr);
+        // for(let element of arr){
+        //     console.log(element);
+        //     element = 5;
+        //     console.log(element);
+        // }
+
+
+    //SET is a collection of unique values. Each value can only occur once in a Set.
+
+            // var _set = new Set()
+            // _set.add(8).add(6).add(4).add(7).add(8)
+            // console.log(_set);
+            // console.log(_set.has(6))
+            // console.log(_set.size)
+            // console.log(_set.delete(8))
+            // console.log(_set)
+            // console.log(_set.values())
+            // for(var entry of _set.values()){
+            //     console.log(entry)
+            // }
+
+    // CONVERT ARRAY TO SET
+
+        // var set1 = new Set([1,2,3,7,9,4,5,8,8,8,8,3,3,4])
+        // console.log(set1)
+        // var set2 = new Set("Hello")
+        // console.log(set2)
+
+        // function test(x){
+        //     console.log(x)
+        // }
+
+        // var set1 = new Set("Hello BSIT")
+        // set1.forEach(test)
+
+        // function test(x){
+        //     if(x == "T"){
+        //         console.log("Found " + x)
+        //     }
+        //     else{
+        //         console.log("None")
+        //     }
+        // }
+
+            // var mp = new Map([["s", 6], [3, "hello"]])
+            // console.log(mp.get("s"))
+            // mp.set(3, "hi")
+            // console.log(mp.get(3))
+            // mp.set("x", 9)
+            // console.log(mp.get("x"))
+            // console.log(mp.size)
+            // mp.delete("3")
+            // console.log(mp)
+            // console.log(mp.get("k"))
+
+            // console.log(mp.has("s"))
+            // // mp.clear();
+            // // console.log(mp)
+
+            // console.log(mp.entries())
+
+            // for(var entry of mp){
+            //     console.log(entry)
+            // }
+
+            // for(var entry of mp){
+            //     console.log(entry[0]) // return Keys of the map
+            // }
+
+            // for(var entry of mp){
+            //     console.log(entry[1]) // return the values
+            // }
+        
+        // COUNT THE NUMBER OF CHARACTERS IN A STRING
+
+            var mp = new Map()
+            str = "Hello this is BSIT-NS 3A learning javascript"
+            for(var letter of str){ // loop thru the "str"
+                if(mp.has(letter)){ //check if does have the letter
+                    mp.set(letter, mp.get(letter)+1) // convert the letters into keys and the value of the iteration will be plus 1. 
+                }
+                else {
+                    mp.set(letter, 1)
+                }
+            }
+            console.log(mp)
+
+
+
+
+
+
+            
+
+        
+
+</script>
+    
+</body>
+</html>
+</html>
